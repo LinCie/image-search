@@ -8,7 +8,7 @@ const app = new Elysia()
     const apikey = Bun.env.APIKEY;
 
     const results = await customsearch.cse.list({
-      cx: "008245539995824095644:3f27vg6irlc",
+      cx: "2083d6ff215544e68",
       q: q || "banana",
       auth: apikey,
       searchType: "image",
