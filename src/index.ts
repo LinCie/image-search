@@ -3,6 +3,7 @@ import { google } from "googleapis";
 import { v4 as uuidv4 } from "uuid";
 
 const app = new Elysia()
+  .get("/", () => "Hello Bun!")
   .get("/search", async ({ query: { q, offset } }) => {
     const customsearch = google.customsearch("v1");
     const apikey = Bun.env.APIKEY;
